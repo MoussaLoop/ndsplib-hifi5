@@ -169,7 +169,7 @@ if [ -z "$LIB_FILE" ]; then
     exit 1
 fi
 
-# cp -v "$LIB_FILE" "$PKG_LIB_DIR/"
+cp -v "$LIB_FILE" "$PKG_LIB_DIR/"
 echo "✓ Library copied to $PKG_LIB_DIR/"
 # Create a symlink with a generic name for easier linking
 LIB_BASENAME=$(basename "$LIB_FILE")
